@@ -1,0 +1,2 @@
+[console_scripts]
+deepvoice = deepvoice.__main__:main
