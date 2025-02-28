@@ -1,9 +1,6 @@
 import socket
 
-HOST = '127.0.0.1'  # Change to server IP if running remotely
-PORT = 9986
-
-def send_message(message):
+def send_message(message, host='127.0.0.1', port=9986):
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as client_socket:
         client_socket.connect((HOST, PORT))
         
