@@ -2,7 +2,7 @@ import socket
 
 def send_message(message, host='127.0.0.1', port=9986):
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as client_socket:
-        client_socket.connect((HOST, PORT))
+        client_socket.connect((host, port))
         
         # Send data in chunks
         client_socket.sendall(message.encode() + b"EOF")  # Append EOF marker
