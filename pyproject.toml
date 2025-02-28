@@ -10,6 +10,7 @@ dependencies = [
 
 [project.scripts]
 deepvoice = "deepvoice.__main__:main"
+deepvoice_server = "deepvoice.server:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
